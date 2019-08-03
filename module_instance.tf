@@ -3,11 +3,11 @@ module "wordpress" {
   version = "2.6.0"
 
   name           = "wordpress"
-  instance_count = 3
+  instance_count = "${var.instance_count}"
 
   ami                    = "${var.ami}"
   instance_type          = "${var.instance_type}"
-  key_name               = "macbook_farrukh"
+  key_name               = "${var.key_name}"
   vpc_security_group_ids = ["sg-81a1d1ce"]
   subnet_id              = "subnet-4ff37d61"
 }

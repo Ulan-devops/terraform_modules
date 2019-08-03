@@ -6,5 +6,5 @@ module "wordpress_sg" {
   vpc_id      = "vpc-1471ad6e"
 
   ingress_cidr_blocks      = ["10.10.0.0/16"]
-  ingress_rules            = ["https-443-tcp"]
+  ingress_rules            = ["443"]
 }

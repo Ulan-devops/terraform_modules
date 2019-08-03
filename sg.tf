@@ -2,7 +2,7 @@ module "wordpress_sg" {
   source = "terraform-aws-modules/security-group/aws"
 
   name        = "wordpress"
-  description = "Security group for user-service with custom ports open within VPC, and PostgreSQL publicly open"
+  description = "some"
   vpc_id      = "vpc-1471ad6e"
 
   ingress_rules            = ["https-443-tcp"]

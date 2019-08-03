@@ -1,4 +1,4 @@
-module "wordpress" {
+module "wordpress_sg" {
   source = "terraform-aws-modules/security-group/aws"
 
   name        = "wordpress"

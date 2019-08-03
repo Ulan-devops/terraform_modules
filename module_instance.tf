@@ -5,7 +5,7 @@ module "wordpress" {
   name           = "wordpress"
   instance_count = 3
 
-  ami                    = "ami-0ad82a384c06c911e"
+  ami                    = "ami-02eac2c0129f6376b"
   instance_type          = "t2.micro"
   key_name               = "macbook_farrukh"
   vpc_security_group_ids = ["sg-81a1d1ce"]

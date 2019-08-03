@@ -6,7 +6,7 @@ module "wordpress" {
   instance_count = 3
 
   ami                    = "${var.ami}"
-  instance_type          = "t2.micro"
+  instance_type          = "${var.instance_type}"
   key_name               = "macbook_farrukh"
   vpc_security_group_ids = ["sg-81a1d1ce"]
   subnet_id              = "subnet-4ff37d61"
